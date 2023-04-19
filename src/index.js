@@ -28,7 +28,7 @@ function onInput(e) {
         createCountryInfoMarkup(data);
       } else {
         clearMarkup();
-        createCountryListMarkup(data);
+        createCountriesListMarkup(data);
       }
     })
     .catch(err => {
@@ -37,7 +37,7 @@ function onInput(e) {
     })
 }
 
-function createCountryListMarkup(data) {
+function createCountriesListMarkup(data) {
   const markupList = data.reduce((acc,country) =>  
     acc + `
     <li class='country-item'>
